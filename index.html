@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Ashrea cutie</title>
+    <style>
+        /* CSS for the pop-up container */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #292929;
+            padding: 20px;
+            border: 1px solid #000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        audio{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="Leonora.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="greetings">
+        <span>H</span>
+        <span>A</span>
+        <span>P</span>
+        <span>P</span>
+        <span>Y  </span>
+        <span>S</span>
+        <span>E</span>
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>D</span>
+    </div>
+    <div class="description">
+        <span>I love you, baby!!</span>
+    </div>
+    <div class="button">
+        <button onclick="showPopup()">Letter</button>
+
+        <div id="popup" class="popup-container">
+            <h2>HAPPY 2ND MONTH BABY KO</h2>
+            <p>So grateful me na umabot tayo ng second month baby hehehehe tho sana naman (wishing na umabot hanngang sa pagtanda xD)
+                <br>Thankful ako sa'yo, tho di mo pansin pero sobrang understanding mo baby lalo na kapag may shortcomings ako tapos sa'yo ko 
+                nadudump :( sana you'll not get tired of me hehehehe.
+                <br>I'm sorry baby when i ask for something na medyo out of ano na lam mo yon? basta yon. Hindi naman sa pinipilit kita ha? Sana hindi mo
+                maisip na iniinvade ko ano mo kasi i just care for you a lot. Lahat ata nang gawin mo naapektuhan ako eh HAHAHAHAHHAHAHA mapa-good man or bad, ganoon na 
+                ata kita kamahal. 
+                <br>Palagi ko naman 'to sinasabi sa'yo diba baby na if you need someone, nandito lang naman ako diba? I can be that someone!! Makikinig ako lagi sa'yo, baka 
+                inlove sa boses mo 'to!!!
+                I love you! Words can't describe how much you mean to me. 'Di man ako makata pero kaya kitang mahalin ng tapat HAHHAHAHAHAHHAHAHAHA.
+                <br> We need to stay together kasi kung hindi, sasaksakin ko kayo ng magiging gf/bf mo! MWA
+
+            </p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    
+        <script>
+            // JavaScript functions to show and hide the pop-up
+            function showPopup() {
+                document.getElementById('popup').style.display = 'block';
+            }
+    
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+            
+        </script>
+        <button>
+            <a href="flower.html">MWA</a>
+        </button>
+        
+    </div>
+</body>
+</html>

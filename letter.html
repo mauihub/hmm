@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for the pop-up container */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showPopup()">Show Pop-up</button>
+
+    <div id="popup" class="popup-container">
+        <h2>This is a pop-up message</h2>
+        <p>Hello, world!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        // JavaScript functions to show and hide the pop-up
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
